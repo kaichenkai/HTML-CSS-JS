@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器2</title>
+    <style>
+        /*兄弟选择器*/
+        /*div + p {*/
+        /*    background-color: skyblue;*/
+        /*}*/
+        /*.div_two ~ p {*/
+        /*    background-color: skyblue;*/
+        /*}*/
+        /*.p {*/
+        /*    background-color: yellow;*/
+        /*}*/
+
+
+                div.div1 {
+            background-color: purple;
+        }
+
+    /*    属性选择器*/
+        div[class] {
+            background-color: yellowgreen;
+        }
+
+
+
+
+
+        div[id][name=div4] {
+            background-color: purple;
+        }
+                        div[id][name] {
+            background-color: yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+<!-- 兄弟选择器-->
+<!--    <p>这是一个p标签</p>-->
+<!--    <div>这是一个div1标签</div>-->
+<!--    <p>这是一个p1标签</p>-->
+<!--    <div class="div_two">这是一个div2标签</div>-->
+<!--    <a href="#">这是一个a1标签</a>-->
+<!--    <p class="p">这是一个p2标签</p>-->
+<!--    <a href="#">这是一个a2标签</a>-->
+<!--    <p class="p">这是一个p3标签</p>-->
+
+<!--属性选择器-->
+    <div id="div1" class="div1">这是一个div1标签</div>
+    <div id="div2">这是一个div2标签</div>
+    <div id="div3" name="div3">这是一个div3标签</div>
+    <div id="div4" name="div4">这是一个div4标签</div>
+</body>
+</html>

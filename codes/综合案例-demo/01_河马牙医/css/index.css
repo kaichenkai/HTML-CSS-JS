@@ -1,0 +1,86 @@
+/*
+通用的样式
+*/
+body, section {
+    margin: 0;
+}
+
+#header {
+    height: 80px;
+}
+
+.header-center{
+    width: 1260px;
+    height: 80px;
+    margin: 0 auto;  /* 设置标签水平居中 */
+}
+
+.header-center-left {
+    float: left;
+    height: 56px;
+    /*line-height: 200px;*/
+    margin-top: 12px;
+}
+
+
+.header-center-right {
+    float: right;
+    width: 450px;
+    height: 80px;
+    /* 垂直居中 */
+    line-height: 80px;
+}
+
+
+.header-center-right a{
+    margin-right: 30px;
+/*    去掉下划线*/
+    text-decoration: none;
+    color: #409ad6;
+    font-size: 18px;
+}
+
+
+/* img, span 基线对齐*/
+.header-center-right a span {
+    vertical-align: middle;
+}
+.header-center-right a img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+
+#footer {
+    height: 30px;
+    background-color: #346699;
+}
+
+#footer .footer-center {
+    /* footer 与 header 保持一致*/
+    width: 1260px;
+    height: 30px;
+    line-height: 30px;
+    /*水平居中*/
+    margin: 0 auto;
+    /*background-color: yellowgreen;*/
+}
+
+#footer .footer-center p {
+    margin-top: 0;
+    /*文字右对齐*/
+    text-align: right;
+}
+
+.footer-center p span {
+    color: white;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+
+section img {
+    width: 100%;
+    vertical-align: top;
+}

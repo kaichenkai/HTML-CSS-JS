@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择器</title>
+    <style>
+        span.classSpan {
+            background-color: black;
+        }
+
+        .classP, .classSpan {
+            background-color: gold;
+        }
+
+
+        /*span.hello1 {*/
+        /*    background-color: red;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<div>
+    <p class="classP">这是一个p标签</p>
+    <span class="classSpan">这是一个span标签
+        <span class="classSpan">这是后代span标签</span>
+    </span>
+    <p>这是一个p标签</p>
+    <p>这是一个p标签</p>
+</div>
+</body>
+</html>

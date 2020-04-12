@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类伪元素</title>
+    <style>
+        p {
+            width: 300px;
+        }
+        /*改变第一个字符的样式*/
+        p::first-letter {
+            font-size: 50px;
+        }
+        /*改变第一行字符的样式*/
+        p::first-line {
+            background-color: skyblue;
+        }
+
+        input:focus {
+            height: 50px;
+            width: 300px;
+        }
+
+        p.test:hover {
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <label>请输入内容:<input type="text"></label>
+
+    <p class="test">我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容</p>
+    <p>我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容</p>
+    <p>我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容</p>
+    <p>我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容我是段落内容</p>
+</body>
+</html>

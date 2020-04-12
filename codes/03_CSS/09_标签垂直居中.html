@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>09_标签垂直居中</title>
+    <style>
+        body {
+           text-align: center;
+        }
+
+        /*span {*/
+        /*    background-color: skyblue;*/
+        /*    line-height: 500px;*/
+        /*    !*display: inline-block;*!*/
+        /*    !*width: 200px;*!*/
+        /*    !*height: 50px;*!*/
+        /*}*/
+
+
+        #box {
+            background-color: yellowgreen;
+            width: 600px;
+            height: 600px;
+            position: relative;
+        }
+
+        button {
+            background-color: skyblue;
+            width: 100px;
+            height: 100px;
+            /* 使用定位方式, 使垂直居中, 子绝父相*/
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-left: -25px;
+            margin-top: -25px;
+            /* 设置内容垂直居中 */
+            line-height: 100px;
+        }
+
+
+
+        /*div.test {*/
+        /*    background-color: skyblue;*/
+        /*    width: 300px;*/
+        /*    height: 60px;*/
+        /*    !*margin: 0 auto;*!*/
+        /*    text-align: center;*/
+        /*    !* 使用定位方式, 使垂直居中, 子绝父相*!*/
+        /*    position: absolute;*/
+        /*    left: 50%;*/
+        /*    top: 50%;*/
+        /*    margin-left: -150px;*/
+        /*    margin-top: -30px;*/
+            /* 设置文字垂直居中 */
+        /*    line-height: 60px;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<!--    <span>这是一个span标签1</span>-->
+
+<!--    <div>-->
+<!--        <p>这是一个p标签</p>-->
+<!--        <button>点我</button>-->
+<!--    </div>-->
+    <div id="box">
+<!--        <div class="test">这是一个div标签1</div>-->
+<button>点我</button>
+    </div>
+
+
+<!--    <div>这是一个div标签2</div>-->
+<!--    <div>这是一个div标签3</div>-->
+<!--    <div>这是一个div标签4</div>-->
+</body>
+</html>
