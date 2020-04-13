@@ -18,8 +18,9 @@ body, section {
 .header-center-left {
     float: left;
     height: 56px;
-    /*line-height: 200px;*/
-    margin-top: 12px;
+    line-height: 80px;
+    vertical-align: center;
+    /*margin-top: 12px;*/
 }
 
 
