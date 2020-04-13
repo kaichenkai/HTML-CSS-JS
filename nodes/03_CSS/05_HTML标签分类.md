@@ -14,7 +14,7 @@
 1. 特点
    + 不会独占一整行, 就像一个单词, 一直往后排
 2. 宽度(width), 高度(height), ~~内边距(padding) 和 外边距(margin) **都不可改变**~~
-3. 常见内联标签: a, img, span, label, br, em(斜体)
+3. 常见内联标签: a, span, label, br, em(斜体)
 
 
 
@@ -26,5 +26,5 @@
 
    + 能够设置宽度和高度
 
-2. 常见内联-块级标签: input, select, textarea
+2. 常见内联-块级标签: img, input, button, select, textarea
 
