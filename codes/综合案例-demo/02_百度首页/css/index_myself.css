@@ -1,0 +1,254 @@
+/*index.html 样式*/
+
+/**********************************通用start*************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**********************************通用end*************************************/
+
+
+/********************************** header start *************************************/
+#header {
+    width: 100%;
+    height: 33px;
+    /*background-color: lightgoldenrodyellow;*/
+    border-bottom: 1px solid #ebebeb;
+}
+#header .header-left {
+    width: 270px;
+    height: 33px;
+    float: left;
+    line-height: 33px;
+    /*background-color: gray;*/
+
+}
+#header .header-left img{
+    /*align: center;*/
+    /*margin-top: 7px;*/
+    vertical-align: middle;
+}
+#header .header-left a{
+        color: #555555;
+    font-size: 13px;
+    margin-left: 8px;
+}
+
+#header .header-right {
+    width: 600px;
+    height: 33px;
+    float: right;
+    text-align: right;
+    line-height: 33px;
+    /*background-color: gray;*/
+}
+#header .header-right a{
+    font-weight: bolder;
+    color: #555555;
+    font-size: 13px;
+    margin-left: 15px;
+}
+#header .header-right a .more-product{
+    background-color: #398bfb;
+    /* 行内标签转 行内-块标签   */
+    display: inline-block;
+    width: 86px;
+    height: 33px;
+    text-align: center;
+/*    顶部对齐*/
+    vertical-align: top;
+    color: #fff;
+}
+/********************************** header end *************************************/
+
+
+
+
+/********************************** section start *************************************/
+#section {
+    width: 641px;
+    height: 189px;
+    margin: 20px auto;
+    text-align: center;
+    /*background-color: greenyellow;*/
+}
+#section .section-logo {
+    width: 100%;
+    height: 112px;
+}
+#section .section-logo img {
+    width: 270px;
+    height: 112px;
+    /*    居中*/
+    margin: 0 auto;
+}
+#section .section-search {
+    width: 100%;
+    height: 77px;
+    padding-top: 10px;
+}
+#section .section-search .section-search-input{
+    width: 536px;
+    height: 44px;
+    border: 1px solid #e0e0e0;
+    padding-left: 8px;
+    float: left;
+    /*去除外边框, 阴影部分*/
+    outline: none;
+}
+/*获取焦点时*/
+#section .section-search input:focus {
+    border-color: #398bfb;
+}
+#section .section-search .search-submit{
+    width: 105px;
+    height: 44px;
+    background-color: #398bfb;
+    border: none;
+    float: left;
+    color: #fff;
+    font-size: 16px;
+        /*去除外边框, 阴影部分*/
+    outline: none;
+}
+
+
+
+/********************************** section end *************************************/
+
+
+
+
+/********************************** article start *************************************/
+#list {
+    width: 893px;
+    height: 600px;
+    margin: 0 auto;
+    border: 1px solid #ebebeb;
+    /*background-color: skyblue;*/
+}
+#list .list_header {
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #ebebeb;
+}
+#list .list-header-left {
+    float: left;
+    line-height: 40px;
+    /*    解决 a 标签留白问题*/
+    font-size: 0;
+}
+#list .list-header-left a {
+    display: inline-block;
+    height: 40px;
+    padding: 0 10px;
+    text-decoration: none;
+    /*background-color: skyblue;*/
+    font-size: 14px;
+    color: #555555;
+    /*内容挤满了*/
+    vertical-align: top;
+}
+#list .list-header-left a img {
+    vertical-align: middle;
+}
+#list .list-header-left a span {
+    vertical-align: middle;
+}
+#list .list-header-left a:hover {
+    background-color: #cccccc;
+}
+
+#list .list-header-right {
+    width: 18px;
+    height: 40px;
+    float: right;
+    margin: 0 10px;
+}
+#list .list-header-right a{
+    line-height:40px;
+}
+#list .list-header-right img{
+    vertical-align: middle;
+}
+
+#article {
+    width: 891px;
+}
+#article .article-left {
+    width: 575px;
+    height: 600px;
+    padding: 10px 5px 5px 10px;
+    float: left;
+}
+#article .article-left .article-one {
+    border-bottom: 1px solid #e0e0e0;
+        padding-bottom: 5px;
+}
+#article .article-left .article-one h3{
+        margin-bottom: 10px
+}
+#article .article-left .article-one p{
+    margin: 3px 0;
+    color: #555555;
+    font-size: 12px;
+    /*border-bottom: ;*/
+}
+
+#article .article-left .article-two {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+    height: 160px;
+}
+#article .article-left .article-two .article-two-left {
+    float: left;
+}
+#article .article-left .article-two .article-two-right {
+    float: left;
+    width: 360px;
+    padding: 20px;
+}
+#article .article-left .article-two .article-two-right h3 {
+    margin-bottom: 10px;
+}
+#article .article-left .article-two .article-two-right p {
+        margin: 3px 0;
+    color: #555555;
+    font-size: 12px;
+}
+
+#article .article-right {
+    float: left;
+}
+#article .article-right .hot-header {
+    width: 315px;
+    height: 60px;
+    padding: 20px;
+}
+#article .article-right .hot-header h4 {
+    float: left;
+}
+#article .article-right .hot-header a {
+    float: right;
+    text-decoration: none;
+    /*font-size: 0;*/
+}
+#article .article-right .hot-header a img, #article .article-right .hot-header a span {
+    vertical-align: middle;
+    color: #000000;
+    /*font-size: 16px;*/
+}
+#article .article-right .hot-link ul {
+    padding: 0 20px;
+}
+#article .article-right .hot-link ul li {
+        list-style: none;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    color: #666666;
+    font-size: 14px;
+}
+/********************************** article end *************************************/
