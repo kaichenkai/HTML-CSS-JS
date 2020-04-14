@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>标签层级关系</title>
+    <style>
+                .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: yellowgreen;
+            /* 开启相对定位*/
+            position: relative;
+            left: 10px;
+            top: 10px;
+        }
+
+        .box3 {
+                        width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .box4 {
+                        width: 200px;
+            height: 200px;
+            background-color: goldenrod;
+        }
+        button {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <button>点我</button>
+<div class="box2">box2</div>
+<div class="box3">box3</div>
+<div class="box4">box4</div>
+</body>
+</html>
