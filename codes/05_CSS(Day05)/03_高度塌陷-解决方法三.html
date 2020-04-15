@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高度塌陷-解决方法三</title>
+    <style>
+        .box01 {
+            /*background-color: yellow;*/
+            border: 1px solid red;
+        }
+        .box02 {
+            height: 200px;
+            background-color: blue;
+            float: right;
+            width: 50px;
+        }
+        .box03 {
+            height: 100px;
+            background-color: skyblue;
+        }
+
+        /* 解决高度塌陷通用样式 */
+        .clearfix:after {
+            content: "";  /*填充内容 默认 "" */
+            display: block;  /*标签类型*/
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="box01 clearfix">
+    <div class="box02"></div>
+<!--    <div style="clear:both"></div>-->
+</div>
+<div class="box03"></div>
+</body>
+</html>

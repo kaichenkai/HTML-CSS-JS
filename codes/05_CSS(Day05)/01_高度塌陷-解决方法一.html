@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高度塌陷-解决方法一</title>
+    <style>
+        .box01 {
+            /*background-color: yellow;*/
+            border: 1px solid red;
+
+            /*解决高度塌陷*/
+            overflow: hidden;
+        }
+        .box02 {
+            height: 200px;
+            background-color: blue;
+            float: right;
+            width: 50px;
+        }
+        .box03 {
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+<div class="box01">
+    <div class="box02"></div>
+</div>
+<div class="box03"></div>
+</body>
+</html>

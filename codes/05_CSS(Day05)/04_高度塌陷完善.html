@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高度塌陷完善</title>
+    <style>
+        .box01 {
+            /*background-color: yellow;*/
+            border: 1px solid red;
+        }
+        .box02 {
+            height: 200px;
+            background-color: blue;
+            float: right;
+            width: 50px;
+        }
+        .box03 {
+            height: 100px;
+            background-color: skyblue;
+        }
+
+        /* 解决高度塌陷通用样式 */
+        /*.clearfix:after {*/
+        /*    content: "";  !*填充内容 默认 "" *!*/
+        /*    display: block;  !*标签类型*!*/
+        /*    clear: both;*/
+        /*}*/
+
+        .box04{
+            width: 400px;
+            height: 400px;
+            background-color: gold;
+        }
+        .box05 {
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+
+            /* 子标签的外边距会传递给父标签 */
+            margin-top: 100px;
+        }
+
+        /* 解决子标签外边距传递 通用样式 */
+        /*.clearfix:before {*/
+        /*    content: "";  !*填充内容 默认 "" *!*/
+        /*    display: table;  !*标签类型*!*/
+        /*    clear: both;*/
+        /*}*/
+
+
+        /* 经过修改后的 clearfix 是一个多功能的,
+        既可以解决高度塌陷, 又可以确保父元素和子元素的垂直外边距不会重叠   */
+        .clearfix:before,
+        .clearfix:after {
+            content: "";  /*填充内容 默认 "" */
+            display: table;  /*标签类型*/
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+<div class="box01 clearfix">
+    <div class="box02"></div>
+<!--    <div style="clear:both"></div>-->   <!-- after -->
+</div>
+<div class="box03"></div>
+
+<div class="box04 clearfix">
+<!--    <table></table>-->   <!-- before -->
+    <div class="box05"></div>
+</div>
+
+</body>
+</html>
