@@ -1,0 +1,129 @@
+/*****************************通用样式********************************/
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #666666;
+}
+
+img{
+    vertical-align: middle;
+}
+
+body{
+    height: 6000px;
+    /*background-color: red;*/
+}
+/*******************************通用样式******************************/
+
+/*******************************头部导航******************************/
+#nav{
+    width: 100%;
+    height: 56px;
+    border-bottom: 1px solid #efefef;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: white;
+   /* box-shadow: 0 5px 5px #efefef;*/
+}
+
+/*左边*/
+#nav .nav-content{
+    width: 1440px;
+    height: 56px;
+    /*background-color: red;*/
+
+    margin: 0 auto;
+}
+
+#nav .nav-content .nav-content-l{
+     float: left;
+}
+
+#nav .nav-content .nav-content-l img{
+    width: 100px;
+    height: 56px;
+}
+
+/*中间列表*/
+#nav .nav-content .nav-content-c{
+    width: 700px;
+    height: 56px;
+    /*background-color: red;*/
+    float: left;
+    margin-left: 120px;
+}
+
+#nav .nav-content .nav-content-c ul li{
+    display: inline-block;
+    height: 56px;
+    line-height: 56px;
+    font-size: 17px;
+}
+
+#nav .nav-content .nav-content-c ul li a{
+    /*background-color: red;*/
+    display: inline-block;
+    height: 56px;
+    padding: 0 15px;
+}
+
+#nav .nav-content .nav-content-c ul li a:hover{
+    background-color: #cccccc;
+}
+
+#nav .nav-content .nav-content-c ul li img{
+    width: 23px;
+    margin-right: 3px;
+}
+
+#nav .nav-content .nav-content-c .search-input{
+    /*background-color: red;*/
+    width: 255px;
+    height: 56px;
+    position: relative;
+}
+
+#nav .nav-content .nav-content-c .search-input input{
+    width: 255px;
+    height: 38px;
+    border: none;
+    background-color: #eeeeee;
+    border-radius: 19px;
+    padding-left: 10px;
+    color: #666666;
+}
+
+#nav .nav-content .nav-content-c .search-input input:focus{
+    outline: none;
+}
+
+#nav .nav-content .nav-content-c .search-input .search-icon{
+    position: absolute;
+    right: 10px;
+    top: 17px;
+}
+
+#nav .nav-content  .nav-content-r{
+    width: 300px;
+    height: 56px;
+    line-height: 56px;
+    float: right;
+}
+
+.head-btn{
+    width: 40px;
+    border-radius: 50%;
+}
+/*******************************头部导航******************************/
