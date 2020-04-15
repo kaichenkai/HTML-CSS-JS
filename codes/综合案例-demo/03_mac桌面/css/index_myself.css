@@ -1,0 +1,135 @@
+/*index.html 样式*/
+* {
+    margin: 0;
+    border: none;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-image: url("../images/mac.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    /*border: 1px solid red;*/
+    background-attachment: fixed;
+}
+
+/*头部*/
+#header {
+    width: 100%;
+    height: 36px;
+    background-color: rgba(255, 255, 255, .6);
+    line-height: 36px;
+        /*固定定位*/
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+#header:hover {
+    cursor: pointer;
+}
+#header .header-left {
+    /*background-color: skyblue;*/
+    float: left;
+}
+#header .header-left li {
+    float: left;
+    margin-left: 15px;
+}
+#header .header-left a {
+    color: #000;
+    font-size: 18px;
+}
+#header .header-left li a:hover {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+#header .header-right {
+    /*background-color: skyblue;*/
+    float: right;
+}
+#header .header-right li {
+    float: right;
+    margin-right: 15px;
+    line-height: 36px;
+    font-size: 18px;
+}
+
+
+
+/*中间部分*/
+#section {
+    /*background-color: skyblue;*/
+    /*开启相对定位 */
+    position: relative;
+}
+#section div {
+    /*background-color: skyblue;*/
+    /* 开启绝对定位 */
+    position: absolute;
+}
+#section div img {
+    width: 100px;
+    height: 100px;
+}
+#section div p {
+        text-align: center;
+    color: white;
+}
+#section .file-one{
+   left: 50px;
+    top: 80px;
+}
+#section .file-two{
+     left: 50px;
+    top: 220px;
+}
+#section .file-three{
+     left: 50px;
+    top: 360px;
+}
+
+#footer {
+    width: 60%;
+    height: 60px;
+    /*background-color: skyblue;*/
+    background-image: url(../images/dock_bg.png);
+    /*开启固定定位*/
+    position: fixed;
+    bottom: 0;
+    left: 20%;
+    /*圆角*/
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    /*ul 居中*/
+    text-align: center;
+}
+#footer ul {
+    display: inline-block;
+}
+#footer ul li {
+    float: left;
+    width: 50px;
+    height: 60px;
+    margin: 0 13px;
+    line-height: 60px;
+
+    /*设置动画的过渡效果*/
+    transition: all 0.25s linear;
+}
+#footer ul li img {
+    width: 50px;
+    height: 50px;
+}
+
+/*动画*/
+#footer ul li:hover{
+    /*设置动画的方向*/
+    transform-origin: bottom center;
+
+    /*放大1.5倍*/
+    transform: scale(1.5);
+}
