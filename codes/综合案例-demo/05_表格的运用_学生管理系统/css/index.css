@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+    text-align: left;
+}
+
+#fieldset {
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    border: 1px solid orange;
+}
+#fieldset ul li {
+    padding: 10px 20px;
+}
+#fieldset ul li input {
+    width: 200px;
+    height: 30px;
+}
+#fieldset ul li .sex {
+    height: 30px;
+}
+#fieldset ul li input.create {
+    width: 100px;
+    text-align: center;
+}
+
+
+#table {
+    width: 600px;
+    /*height: 300px;*/
+    border: 1px solid orange;
+    margin: 20px auto;
+}
+#table thead tr,
+#table tbody tr {
+    background-color: skyblue;
+}
+#table thead tr th {
+    padding: 15px 15px;
+    background-color: orange;
+}
+#table tbody tr td {
+    padding: 10px 10px;
+
+}
+#table tbody tr {
+    border-bottom: 1px solid  #000000;
+}

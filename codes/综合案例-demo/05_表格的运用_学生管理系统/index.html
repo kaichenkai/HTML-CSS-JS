@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格的运行，学生管理系统</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!--    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">-->
+</head>
+<body>
+<!--学生录入-->
+<fieldset id="fieldset">
+    <legend><span>学生录入系统</span></legend>
+    <ul>
+        <li><label>姓名: <input type="text" placeholder="请输入姓名"></label></li>
+        <li><label>年龄: <input type="number" placeholder="请输入年龄"></label></li>
+        <li><label>性别:
+            <select class= "sex" name="sex" id="">
+                <option value="1">男</option>
+                <option value="2">女</option>
+            </select>
+        </label></li>
+        <li><label>手机: <input type="text" placeholder="请输入姓名"></label></li>
+        <li><input class="create" type="button" value="创建新用户"></li>
+    </ul>
+
+
+</fieldset>
+
+<!--学生列表-->
+<table id="table">
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>手机</th>
+        <th>删除</th>
+    </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>约翰</td>
+            <td>男</td>
+            <td>12</td>
+            <td>15655556666</td>
+            <td><button>删除</button></td>
+        </tr>
+            <tr>
+            <td>约翰</td>
+            <td>男</td>
+            <td>12</td>
+            <td>15655556666</td>
+            <td><button>删除</button></td>
+        </tr>
+            <tr>
+            <td>约翰</td>
+            <td>男</td>
+            <td>12</td>
+            <td>15655556666</td>
+            <td><button>删除</button></td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
