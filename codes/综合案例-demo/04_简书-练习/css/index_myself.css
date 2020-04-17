@@ -1,0 +1,113 @@
+/*index 页面样式*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+/*页面导航*/
+#nav {
+    width: 1440px;
+    height: 56px;
+    border-bottom: 1px solid #efefef;
+    margin: 0 auto;
+}
+/*左边*/
+#nav .navbar-left {
+    float: left;
+    /*background-color: skyblue;*/
+}
+#nav .navbar-left img{
+    width: 100px;
+    height: 56px;
+}
+/*中间*/
+#nav .navbar-middle {
+    /*background-color: skyblue;*/
+    float: left;
+    width: 700px;
+    height: 56px;
+    margin-left: 120px;
+    line-height: 56px;
+}
+#nav .navbar-middle ul {
+    height: 56px;
+}
+#nav .navbar-middle ul li {
+    display: inline-block;
+    /*浮动和标签类型转换效果不同*/
+    /*float: left;*/
+    height: 56px;
+}
+#nav .navbar-middle ul li a {
+    text-decoration: none;
+    color: #666666;
+    display: inline-block;
+    width: 90px;
+    height: 56px;
+    padding: 0 15px;
+    font-size: 17px;
+}
+#nav .navbar-middle ul li img {
+    width: 23px;
+    height: 23px;
+    vertical-align: middle;
+     margin-right: 3px;
+}
+#nav .navbar-middle ul li span {
+    /*vertical-align: middle;*/
+}
+#nav .navbar-middle ul li.search {
+    width: 255px;
+    height: 56px;
+    /*开启定位*/
+    position: relative;
+    line-height: 56px;
+}
+#nav .navbar-middle ul li input {
+    width: 255px;
+    height: 38px;
+    background-color: #eeeeee;
+    padding-left: 10px;
+    border: 0;
+    border-radius: 19px;
+    color: #666666;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*top: 9px;*/
+}
+#nav .navbar-middle ul li input:focus {
+    outline: none;
+}
+#nav .navbar-middle ul li  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 17px;
+}
+
+/*右边*/
+#nav .navbar-right {
+    /*background-color: yellowgreen;*/
+    float: right;
+    width: 300px;
+    height: 56px;
+    line-height: 56px;
+}
+
+#nav .navbar-right a .touxiang {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+#nav .navbar-right a  {
+    text-decoration: none;
+}
+#nav .navbar-right img {
+    vertical-align: middle;
+}
+#nav .navbar-right a span {
+    margin-left: 5px;
+    color: #666666;
+}
