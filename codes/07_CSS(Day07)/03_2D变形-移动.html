@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D变形-移动</title>
+    <style>
+        #main {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+
+            /*设置过度效果*/
+            /*transition: all 1s linear*/
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+        }
+
+        /*添加移动效果*/
+        #main:active {
+            transform: translateX(200px);
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        我要移动
+    </div>
+</body>
+</html>

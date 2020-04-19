@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06_旋转</title>
+    <style>
+        #main {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #e0e0e0;
+            margin: 50px auto;
+        }
+        #main img {
+            width: 100%;
+            height: 100%;
+
+            /*    设置过度效果*/
+            transition: all 0.5s linear;
+            /*transform-origin: top left;*/
+            /*transform-origin: 20% 20%;*/
+        }
+
+        /*设置缩放效果*/
+        #main:hover img {
+            transform: rotateX(-180deg);
+            /*transform: rotate(-180deg);*/
+        }
+    </style>
+</head>
+<body>
+    <div id="main"><img src="images/labixiaoxin.jpg" alt=""></div>
+
+</body>
+</html>

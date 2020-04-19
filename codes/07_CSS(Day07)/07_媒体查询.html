@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>媒体查询</title>
+    <style>
+        #main {
+            height: 600px;
+        }
+        /* 使用媒体查询 */
+        @media screen and (min-width: 1000px) {
+            #main {
+                background-color: red;
+            }
+        }
+        @media screen and (min-width: 500px) and (max-width: 1000px) {
+            #main {
+                background-color: green;
+            }
+        }
+        @media screen and  (min-width: 200px) and (max-width: 500px) {
+            #main {
+                background-color: gold;
+            }
+        }
+        @media screen  and  (max-width: 200px) {
+            #main {
+                background-color: skyblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+</body>
+</html>

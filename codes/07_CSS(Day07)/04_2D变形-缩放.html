@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2D变形-缩放</title>
+    <style>
+        #main {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            margin: 50px auto;
+
+            /*设置动画过程*/
+            /*transition: all 1s linear*/
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+        }
+
+        /*添加缩放效果*/
+        #main:active {
+            /*transform: scaleX(2);  !*参数为基础元素的倍数*!*/
+            /*transform: scale(2);  !*参数为基础元素的倍数*!*/
+            transform: scale(0.5);  /*参数为基础元素的倍数*/
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        我要缩放
+    </div>
+</body>
+</html>
